@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style type="text/css" >
+       /* td{
+           width: 12% ;
+       } */
+    </style>
+</head>
+<body>
+    <h3>Alert Messages</h3>
+    <form onSubmit='return message()'>
+        Alert Message :
+        <input type="text" id='news' placeholder="Write your todo" />
+        <button>Add</button>
+    </form>
+    <br/>
+    <form onSubmit='return datamessage()'>
+            Data Alert Message :
+            <input type="text" id='dnew' placeholder="Write your todo" />
+            <button>Add</button>
+        </form>
+        <br />
+      <hr />
+        <h3>Signal Services</h3>
+        <h5>For 1st</h5>
+        <form onSubmit='return signal()'>
+                Pair:<input type="text" id='pair' placeholder="Write your todo" />
+                Action:<input type="text" id='action' placeholder="Write your todo" />
+                Entry:<input type="text" id='entry' placeholder="Write your todo" />
+                TP:<input type="text" id='tp' placeholder="Write your todo" />
+                SI:<input type="text" id='si' placeholder="Write your todo" />
+                <br />
+                <br />
+                Status:<input type="text" id='status' placeholder="Write your todo" />
+                Comment:<input type="text" id='comment' placeholder="Write your todo" />
+                SignalDate:<input type="date" id='signaldate' placeholder="Write your todo" />
+                Result:<input type="text" id='result' placeholder="Write your todo" />
+                <button>Add</button>
+        </form>
+
+        <h5>For 2nd</h5>
+        <form onSubmit='return signal1()'>
+                Pair:<input type="text" id='pair11' placeholder="Write your todo" />
+                Action:<input type="text" id='action11' placeholder="Write your todo" />
+                Entry:<input type="text" id='entry11' placeholder="Write your todo" />
+                TP:<input type="text" id='tp11' placeholder="Write your todo" />
+                SI:<input type="text" id='si11' placeholder="Write your todo" />
+                <br />
+                <br />
+                Status:<input type="text" id='status11' placeholder="Write your todo" />
+                Comment:<input type="text" id='comment11' placeholder="Write your todo" />
+                SignalDate:<input type="date" id='signaldate11' placeholder="Write your todo" />
+                Result:<input type="text" id='result11' placeholder="Write your todo" />
+                <button>Add</button>
+        </form>
+
+        <h5>For 3rd</h5>
+        <form onSubmit='return signal2()'>
+                Pair:<input type="text" id='pair22' placeholder="Write your todo" />
+                Action:<input type="text" id='action22' placeholder="Write your todo" />
+                Entry:<input type="text" id='entry22' placeholder="Write your todo" />
+                TP:<input type="text" id='tp22' placeholder="Write your todo" />
+                SI:<input type="text" id='si22' placeholder="Write your todo" />
+                <br />
+                <br />
+                Status:<input type="text" id='status22' placeholder="Write your todo" />
+                Comment:<input type="text" id='comment22' placeholder="Write your todo" />
+                SignalDate:<input type="date" id='signaldate22' placeholder="Write your todo" />
+                Result:<input type="text" id='result22' placeholder="Write your todo" />
+                <button>Add</button>
+        </form>
+        <br />
+      <hr />
+        <h3>Indicators</h3>
+        <h5>For 1st</h5>
+        <form onSubmit='return indicator()'>
+                Main Heading<input type="text" id='indicatortext' placeholder="Write your todo" />
+                Date:<input type="Date" id='indicatordate' placeholder="Write your todo" />
+                Topic related Text :  <textarea id='indicatordetails' placeholder="Type Some Text..." rows="2"></textarea>
+                <button>Add</button>    
+            </form>
+            <br><br>
+            Upload topic Related image:<input name="image" type="file" id='indicatorimage' placeholder="Add something" />
+            <button id="upload" >Upload</button><br />
+            <br >
+            Upload File for Download Purpose :<input type="file" id='indicatorDownload' placeholder="Write your todo" /> 
+            <button id="download" >Upload for Download</button>
+        <br />
+        <!-- <h5>For 2nd</h5>
+        <form onSubmit='return indicator1()'>
+                Main Heading<input type="text" id='indicatortext1' placeholder="Write your todo" />
+                Date:<input type="Date" id='indicatordate1' placeholder="Write your todo" />
+                Topic related Text :  <textarea id='indicatordetails1' placeholder="Type Some Text..." rows="2"></textarea>
+                <button>Add</button>    
+            </form>
+            <br><br>
+            Upload topic Related image:<input name="image" type="file" id='indicatorimage1' placeholder="Add something" />
+            <button id="upload1" >Upload</button><br />
+            <br >
+            Upload File for Download Purpose :<input type="file" id='indicatorDownload1' placeholder="Write your todo" /> 
+            <button id="download1" >Upload for Download</button>
+        <br />
+        <h5>For 3rd</h5>
+        <form onSubmit='return indicator2()'>
+                Main Heading<input type="text" id='indicatortext2' placeholder="Write your todo" />
+                Date:<input type="Date" id='indicatordate2' placeholder="Write your todo" />
+                Topic related Text :  <textarea id='indicatordetails2' placeholder="Type Some Text..." rows="2"></textarea>
+                <button>Add</button>    
+            </form>
+            <br><br>
+            Upload topic Related image:<input name="image" type="file" id='indicatorimage2' placeholder="Add something" />
+            <button id="upload2" >Upload</button><br />
+            <br >
+            Upload File for Download Purpose :<input type="file" id='indicatorDownload2' placeholder="Write your todo" /> 
+            <button id="download2" >Upload for Download</button>
+        <br /> -->
+<hr />
+        <br />
+        <h3>Forex library</h3>
+        <h5>For 1st</h5>
+        <form onSubmit='return forexlibrary()'>
+                Main Heading<input type="text" id='forextext' placeholder="Write your todo" />
+                Date:<input type="Date" id='forexdate' placeholder="Write your todo" />
+                Topic related Text :  <textarea id='forexdetails' placeholder="Type Some Text..." rows="2"></textarea>
+                <button>Add</button>    
+            </form>
+            <br><br>
+            Upload topic Related image:<input name="image" type="file" id='forexfileupload' placeholder="Add something" />
+            <button id="forexlupload" >Upload</button><br />
+            <br >
+            Upload File for Download Purpose :<input type="file" id='forexfiledownload' placeholder="Write your todo" /> 
+            <button id="forexlibrarydownload" >Upload for Download</button>
+        <br />
+        <!-- <h5>For 2nd</h5>
+        <form onSubmit='return forexlibrary1()'>
+                Main Heading<input type="text" id='forextext1' placeholder="Write your todo" />
+                Date:<input type="Date" id='forexdate1' placeholder="Write your todo" />
+                Topic related Text :  <textarea id='forexdetails1' placeholder="Type Some Text..." rows="2"></textarea>
+                <button>Add</button>    
+            </form>
+            <br><br>
+            Upload topic Related image:<input name="image" type="file" id='indicatorimage1' placeholder="Add something" />
+            <button id="upload1" >Upload</button><br />
+            <br >
+            Upload File for Download Purpose :<input type="file" id='indicatorDownload1' placeholder="Write your todo" /> 
+            <button id="download1" >Upload for Download</button>
+        <br />
+        <h5>For 3rd</h5>
+        <form onSubmit='return forexlibrary2()'>
+                Main Heading<input type="text" id='forextext2' placeholder="Write your todo" />
+                Date:<input type="Date" id='forexdate2' placeholder="Write your todo" />
+                Topic related Text :  <textarea id='forexdetails2' placeholder="Type Some Text..." rows="2"></textarea>
+                <button>Add</button>    
+            </form>
+            <br><br>
+            Upload topic Related image:<input name="image" type="file" id='indicatorimage2' placeholder="Add something" />
+            <button id="upload2" >Upload</button><br />
+            <br >
+            Upload File for Download Purpose :<input type="file" id='indicatorDownload2' placeholder="Write your todo" /> 
+            <button id="download2" >Upload for Download</button>
+        <br /> -->
+<hr />
+       
+        <br />
+        <h3>Forex Ea</h3>
+        <h5>For 1st</h5>
+        <form onSubmit='return forexea()'>
+                Main Heading<input type="text" id='forexeatext' placeholder="Write your todo" />
+                Date:<input type="Date" id='forexeadate' placeholder="Write your todo" />
+                Topic related Text :  <textarea id='forexeadetails' placeholder="Type Some Text..." rows="2"></textarea>
+                <button>Add</button>    
+            </form>
+            <br><br>
+            Upload topic Related image:<input name="image" type="file" id='forexfileeaupload' placeholder="Add something" />
+            <button id="forexeaupload" >Upload</button><br />
+            <br >
+            Upload File for Download Purpose :<input type="file" id='forexfileeadownload' placeholder="Write your todo" /> 
+            <button id="forexeadownload" >Upload for Download</button>
+        <br />
+        <!-- <h5>For 2nd</h5>
+        <form onSubmit='return forexlibrary1()'>
+                Main Heading<input type="text" id='forextext1' placeholder="Write your todo" />
+                Date:<input type="Date" id='forexdate1' placeholder="Write your todo" />
+                Topic related Text :  <textarea id='forexdetails1' placeholder="Type Some Text..." rows="2"></textarea>
+                <button>Add</button>    
+            </form>
+            <br><br>
+            Upload topic Related image:<input name="image" type="file" id='indicatorimage1' placeholder="Add something" />
+            <button id="upload1" >Upload</button><br />
+            <br >
+            Upload File for Download Purpose :<input type="file" id='indicatorDownload1' placeholder="Write your todo" /> 
+            <button id="download1" >Upload for Download</button>
+        <br />
+        <h5>For 3rd</h5>
+        <form onSubmit='return forexlibrary2()'>
+                Main Heading<input type="text" id='forextext2' placeholder="Write your todo" />
+                Date:<input type="Date" id='forexdate2' placeholder="Write your todo" />
+                Topic related Text :  <textarea id='forexdetails2' placeholder="Type Some Text..." rows="2"></textarea>
+                <button>Add</button>    
+            </form>
+            <br><br>
+            Upload topic Related image:<input name="image" type="file" id='indicatorimage2' placeholder="Add something" />
+            <button id="upload2" >Upload</button><br />
+            <br >
+            Upload File for Download Purpose :<input type="file" id='indicatorDownload2' placeholder="Write your todo" /> 
+            <button id="download2" >Upload for Download</button>
+        <br /> -->
+    <br>
+        <!-- Pair:<input type="text" id='1' placeholder="Write your todo" />
+        Action:<input type="text" id='2' placeholder="Write your todo" />
+        Entry:<input type="text" id='3' placeholder="Write your todo" /> -->
+        <!-- TP:<input type="text" id='tp22' placeholder="Write your todo" />
+        SI:<input type="text" id='si22' placeholder="Write your todo" />
+        <br />
+        <br />
+        Status:<input type="text" id='status22' placeholder="Write your todo" />
+        Comment:<input type="text" id='comment22' placeholder="Write your todo" />
+        SignalDate:<input type="date" id='signaldate22' placeholder="Write your todo" />
+        Result:<input type="text" id='result22' placeholder="Write your todo" /> -->
+        <!-- <button id = "addindicators" >Add Indicators</button> -->
+        <!-- <button id = "addi" >add</button>
+        <table id="table" class="table">
+            <thead>
+                <tr>
+                    <th>Pair</th>
+                    <th>Action</th>
+                    <th>Entry</th>
+                    <!-- <th>TP</th><th>SI</th><th>Status</th><th>comment</th><th>Result</th><th>Date</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                 </tr>
+                    </tbody>
+                  </table> -->
+    <!-- <script type=text/javascript src="script.js" ></script> -->
+    <script type=text/javascript src="../script.js" >
+    </script>
+</body>
+</html>

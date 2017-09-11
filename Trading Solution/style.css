@@ -1,0 +1,598 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+}
+.logo{
+   margin-left: 20px ;
+    height: 150px ;
+    width: 20% ;
+    float: left ;
+  
+}
+.logo img {
+    display: block ;
+    height: 150px ;
+}
+ 
+ .gif{
+     /* border: 2px solid red;  */
+    height: 150px ;
+    width: 60% ;
+    margin-top: 4px ;
+    margin-left: 35% ;
+    padding-top: 15px ;
+} 
+.gif img{
+    width: 100% ;
+    height: 130px ;
+} 
+ .navigation{
+     margin:10px ;
+
+ }
+.colorboxalert{
+    height: 15px;
+}
+
+.colorbox{
+    background-color: red ;
+    height: 10px;
+    width: 10px;
+    float: left;
+    margin-left: 43%;
+    margin-top: 1px;
+    border-radius: 50px;
+    animation: example 1s linear 1s infinite alternate;
+}
+
+.alrt{
+     font-size: 9px;
+    height: 14px;
+    width: 30px;
+    margin-left: 48%;
+    color : red;
+    animation: example1 1s linear 1s infinite alternate;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color:white;}
+}
+
+@keyframes example1 {
+    from {color: red;}
+    to {color:white;}
+}
+
+.salmannews{
+    width :100% ;
+    height: auto ;
+    border-bottom: 1px solid black ; 
+    font-size: 20px ;
+    text-align: center ;
+    font-weight: bold ;
+    padding-top : 3px ;
+    padding-left : 5px ;
+}
+.salmannews1{
+    width :100% ;
+    height: auto ;
+    font-size: 20px ;
+    text-align: center ;
+    font-weight: bold ;
+    padding-top : 3px ;
+    padding-left : 5px ;
+}
+.salmannews1 a{
+    font-size: 15px ;
+    font-style: italic ; 
+}
+.salmannews a{
+    font-size: 15px ;
+    font-style: italic ; 
+}
+#alertmessage{
+    width: 100%;
+}
+ div .article{
+    border: 1px solid black;
+    border-radius: 10px ;
+    width: 20% ;
+    height : auto ;
+   max-height: 500px ;
+    margin-left: 10px ;
+    float :left ;
+    clear: both ;
+} 
+
+.list{
+    padding: 10px;
+    overflow: hidden ;
+ }
+.list .listspan{
+    width: 100% ;
+    padding-top: 15px ;
+}
+
+.list img {
+    width: 60px ;
+    height: 25px ;
+}
+.list .list-content{
+    margin: 0px ;
+}
+.list .list-content1{
+    font-size: 13px ;
+    font-weight: bold ;
+}
+
+.list button{
+    
+}
+
+
+div article h5{
+    text-align: center ;
+    margin: 10px 10px 0px 10px ;
+    padding-bottom: 10px ;
+    border-bottom: 2px solid black ; 
+}
+
+
+div.section{
+        width: 100% ;
+        height: 100% ;
+}
+.section1{
+    border:1px solid black;
+    width: 55% ;
+    max-width: 55% ;
+     overflow: hidden ;
+     height: 500px ;
+     max-height: 500px ;
+     float :left ;
+        margin: 0 10px 0px 10px ;
+        padding: 10px ;  
+         border-top-left-radius: 10px ;
+         border-top-right-radius: 10px ;
+}
+
+div .article1 {
+    /* border: 2px solid brown; */
+    width: 20% ;
+    height: 250px ;
+    margin-left: 78% ;
+}
+div .article11 {
+    border: 1px solid black;
+    width: 18.5%;
+    border-radius: 10px;
+    height: 124px;
+    margin-left: 79%;
+    margin-top: 126px;
+}
+.d-block{
+    width: 100% ;
+    max-height: 852px ;
+}
+ 
+div.services{
+     /* border: 2px solid black;  */
+     clear: both ;
+    height: 100px ;
+    width: 100% ;
+} 
+div .spanbtn{
+    background-image: linear-gradient(#000000 ,#808080) ;
+    float: left ;
+    width: 18% ;
+    background-color: #808080 ;
+    cursor : pointer ;
+    font-family: Arial, Helvetica, sans-serif  ;
+    text-decoration: none ;
+    font-weight: 100 ;
+    font-size: 25px ;
+    color :white ;
+    height: 95px ;
+    border-radius: 20px ;
+    margin: 0px 15px 10px 15px ;
+}
+div .spanbtn:focus {
+    outline: none;
+}
+div .spanbtn:hover {
+    /* transition-duration:5s ;
+    transition-timing-function: ease-in ; */
+    background-image:linear-gradient(#808080 ,#808080) ;
+    background-color: #808080 ;
+    
+}
+
+
+span.pricelist{
+       /* border: 2px solid brown;  */
+        width: 58% ;
+        height: 50px ;
+        margin-top: 30px ;
+        margin-right: 10px ;
+        float: left ; 
+}
+
+div.services1{
+    height: 350px ;
+    width: 100% ;
+}
+
+.chart{
+    width: 100% ;
+    height: 355px ;
+}
+
+.chart .chartbanner2,.chart .chartbanner1,.chart .chartbanner{
+    height: 340px ;
+    width: 20% ;
+    margin: 10px ;
+    overflow: hidden ;
+    border: 1px solid black;
+}
+
+
+.chart .chartbanner{
+    float : left ;
+    border-top-left-radius: 20px ; 
+}
+
+.chart .chartbanner2{
+    float : right ;
+    border-top-right-radius: 20px ;
+}
+
+
+.chart .chartbanner1{
+    float : center ;
+    width: 55% ;
+}
+
+ footer{
+    
+}
+
+.book li{
+    float:right ;
+    margin-right: 20px;
+}
+ 
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+footer { background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', sans-serif; }
+.footerleft { margin-top:50px; padding:0 36px; }
+.logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
+
+.footerleft p { color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
+.footerleft p i { width:20px; color:#999;}
+
+
+.paddingtop-bottom {  margin-top:50px;}
+.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+  
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+ 
+ 
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:gray; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:black;  font-size:12px;} 
+
+div .sr1{
+    width: 20% ;
+    height: 300px ;
+    margin-left: 10% ;
+    margin-top: 12px ;
+    background-color: lightgray ;
+    border-radius: 10px ;
+    float: left ;
+    
+}
+.fa-p{
+    align:center ;
+    font-size: 50px ;
+    /* border: 1px solid black; */
+}
+.fa-p .fa{
+    /* border: 1px solid black; */
+    margin-left: 40% ;
+    color :white ;
+}
+.fa:hover {
+    /* border: 1px solid black; */
+    color :black ;
+}
+
+.services1 h3:hover{
+    color: black ;
+}
+
+.services1 h4:hover{
+    color: black ;
+}
+
+.services1 h3,.services1 h4{
+    color: white ;
+    text-align: center ;
+}
+
+.footerleft{
+    margin-top : 10px ;
+}
+
+.btn{
+    font-size: 20px ;
+}
+.social{
+    font-size: 30px ;
+    margin-left: 10px ;
+    margin-top: 0px ;
+}
+.social .fa-whatsapp{
+    color :green ;
+}
+.social .fa-whatsapp:hover,.social .fa-skype:hover ,.social .fa-google-plus-official:hover ,.social .fa-facebook-official:hover{
+  color : black ;
+  cursor: pointer ;
+}
+.social .fa-skype{
+    color : darkturquoise ;
+}
+
+.social .fa-google-plus-official{
+    color :#c71610 ;
+}
+.social .fa-facebook-official{
+    color : blue ;
+}
+.subs{
+    margin-top: 10px ;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 23px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.signal{
+    height: 7% ;
+    background-color: black ;
+    border-top-left-radius :10px ;
+    border-top-right-radius :10px ;
+}
+div.card {
+        border-radius: 1.25rem;
+}
+
+.signal h5 {
+    padding-top: 10px ;
+    padding-left: 40% ;
+    color: white;
+}
+
+@media screen and (max-width: 1220px) {
+ div .article{
+     width: 22% ;
+     height: auto ;
+ }
+}
+
+@media screen and (max-width: 1110px) {
+  .topnav a {
+    font-size: 10px;
+}
+ div .article{
+     width: 24% ;
+ }
+
+.salmannews{
+    font-size: 16px;
+    padding-top: 7px;
+    padding-left: 0px;
+    height: auto ;
+}
+}
+
+@media screen and (max-width: 1020px) {
+    div article h5{
+        font-size: 16px ;
+    }
+     div .article{
+     width: 27% ;
+    }
+
+}
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+ div .article{
+     width: 30% ;
+
+}
+}
+@media screen and (max-width: 900px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gif{
+      display: none ;
+  }
+  .logo{
+      position: relative ;
+      margin-left: 40% ;
+      height : 150px ;
+      width: 200px ;
+}
+.topnav{
+    width : 100% ;
+}
+.logo img {
+    display: block ;
+    width : 100% ;
+    height: 100% ;
+}
+ div .article{
+     width: 32% ; 
+}
+}
+
+@media screen and (max-width: 850px) {
+ .list button{
+     width: 100% ;
+
+ }
+}
+@media screen and (max-width: 650px) {
+ .list button{
+     width: 24% ;
+   }
+    div .article{
+     width: 70% ;
+     margin-left: 15% ;  
+}
+    .list {
+    padding: 10px 10% 10px 10%;
+    overflow: hidden;
+    text-align: center;
+}
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+.logo{
+    position: absolute;
+    height: 96px;
+    width: 33%;
+    margin-top: 0px;
+    margin-left: 35% ; 
+    z-index: 1;  
+}
+.logo img {
+    height: 110px;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 65px;
+}
+.navigation{
+    height: 60px;
+    width: 100%;
+    margin: unset;
+    margin-top: 60px;
+}
+.topnav{
+    width: 100% ;
+}
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+.list button {
+    width: 24%;
+    font-size: 10px;}
+
+}
+@media screen and (max-width: 380px) {
+  
+.list button {
+    width: 45%;
+}
+.salmannews {
+    font-size: 10px;
+    padding-top: 12px;
+    height: 61px;
+}    
+
+}
+@media screen and (max-width: 280px) {
+  
+.list {
+    padding: 10px 0% 10px 0%;
+ }
+
+}

@@ -1,0 +1,35 @@
+www.earningfx.com
+
+
+Domain
+
+godady
+ID: earningfx@gmail.com
+Pass: Admin@0321
+
+
+Hosting
+
+
+Dns Zone check is enabled.
++===================================+
+| New Account Info                  |
++===================================+
+| Domain: earningfx.com
+| Ip: 204.93.177.251 👎
+| HasCgi: y
+| UserName: earningfx
+| PassWord: kezi@salman123
+| CpanelMod: paper_lantern
+| HomeRoot: /home
+| Quota: 976.56 GB
+| NameServer1: ns1.kezitech.com
+| NameServer2: ns2.kezitech.com
+| NameServer3: 
+| NameServer4: 
+| Contact Email: kashifpirwani92@gmail.com
+| Package: kezitec1_new
+| Feature List: default
+| Language: en
++===================================+
+...Done
