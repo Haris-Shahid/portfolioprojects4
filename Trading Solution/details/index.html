@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,20 +16,47 @@
     </style>
 </head>
 <body>
-    <h3>Alert Messages</h3>
-    <form onSubmit='return message()'>
-        Alert Message :
-        <input type="text" id='news' placeholder="Write your todo" />
-        <button>Add</button>
-    </form>
-    <br/>
-    <form onSubmit='return datamessage()'>
-            Data Alert Message :
-            <input type="text" id='dnew' placeholder="Write your todo" />
-            <button>Add</button>
-        </form>
-        <br />
-      <hr />
+      
+    <h1 align='center' >DashBoard</h1>
+    <div class="container" >
+        <div class="jumbotron" >
+            <div class="row">
+                <div class="col-6">
+                    <form onSubmit='return message()'>
+                        Alert Message :
+                        <input type="text" id='news' placeholder="Write your todo" />
+                        <button>Add</button>
+                    </form> 
+                </div>
+                <div class="col-6">
+                    <form onSubmit='return datamessage()'>
+                            Data Alert Message :
+                            <input type="text" id='dnew' placeholder="Write your todo" />
+                            <button>Add</button>
+                    </form>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                    <div class="col-3">
+                        <button class="btn btn-success" onclick="location.href='signalservices.html';" >Signal Services</button>
+                    </div>
+                    
+                    <div class="col-3">
+                        <button class="btn btn-success" onclick="location.href='indicators.html';" >Indicators</button>
+                    </div>
+                    
+                    <div class="col-3">
+                        <button class="btn btn-success" onclick="location.href='forexlibrary.html';" >Forex Library</button>
+                    </div>
+                    
+                    <div class="col-3">
+                        <button class="btn btn-success" onclick="location.href='forexea.html';" >forexEA</button>
+                    </div>
+                    
+                </div>            
+        </div>
+    </div>
         <h3>Signal Services</h3>
         <h5>For 1st</h5>
         <form onSubmit='return signal()'>
@@ -124,7 +150,7 @@
             Upload File for Download Purpose :<input type="file" id='indicatorDownload2' placeholder="Write your todo" /> 
             <button id="download2" >Upload for Download</button>
         <br /> -->
-<hr />
+<!-- <hr />
         <br />
         <h3>Forex library</h3>
         <h5>For 1st</h5>
@@ -140,7 +166,7 @@
             <br >
             Upload File for Download Purpose :<input type="file" id='forexfiledownload' placeholder="Write your todo" /> 
             <button id="forexlibrarydownload" >Upload for Download</button>
-        <br />
+        <br /> -->
         <!-- <h5>For 2nd</h5>
         <form onSubmit='return forexlibrary1()'>
                 Main Heading<input type="text" id='forextext1' placeholder="Write your todo" />
@@ -169,7 +195,7 @@
             Upload File for Download Purpose :<input type="file" id='indicatorDownload2' placeholder="Write your todo" /> 
             <button id="download2" >Upload for Download</button>
         <br /> -->
-<hr />
+<!-- <hr />
        
         <br />
         <h3>Forex Ea</h3>
@@ -186,7 +212,7 @@
             <br >
             Upload File for Download Purpose :<input type="file" id='forexfileeadownload' placeholder="Write your todo" /> 
             <button id="forexeadownload" >Upload for Download</button>
-        <br />
+        <br /> -->
         <!-- <h5>For 2nd</h5>
         <form onSubmit='return forexlibrary1()'>
                 Main Heading<input type="text" id='forextext1' placeholder="Write your todo" />
@@ -215,7 +241,7 @@
             Upload File for Download Purpose :<input type="file" id='indicatorDownload2' placeholder="Write your todo" /> 
             <button id="download2" >Upload for Download</button>
         <br /> -->
-    <br>
+    <!-- <br> -->
         <!-- Pair:<input type="text" id='1' placeholder="Write your todo" />
         Action:<input type="text" id='2' placeholder="Write your todo" />
         Entry:<input type="text" id='3' placeholder="Write your todo" /> -->
@@ -235,15 +261,15 @@
                     <th>Pair</th>
                     <th>Action</th>
                     <th>Entry</th>
-                    <!-- <th>TP</th><th>SI</th><th>Status</th><th>comment</th><th>Result</th><th>Date</th> -->
-                </tr>
+                     <th>TP</th><th>SI</th><th>Status</th><th>comment</th><th>Result</th><th>Date</th> -->
+                <!-- </tr>
             </thead>
             <tbody>
                 <tr>
                     
                  </tr>
                     </tbody>
-                  </table> -->
+                  </table>  -->
     <!-- <script type=text/javascript src="script.js" ></script> -->
     <script type=text/javascript src="../script.js" >
     </script>
