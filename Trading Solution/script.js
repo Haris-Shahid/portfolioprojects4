@@ -404,47 +404,47 @@ function indicator(){
         return false ;
 
 }
-// function indicator1(){
-//     var indicatortext = document.getElementById('indicatortext1') ;
-//     var indicatordate = document.getElementById('indicatordate1') ;
-//     var indicatordetails = document.getElementById('indicatordetails1') ;
-//     var indicatordownload = document.getElementById('indicatorDownload1') ;
+function indicator1(){
+    var indicatortext = document.getElementById('indicatortext1') ;
+    var indicatordate = document.getElementById('indicatordate1') ;
+    var indicatordetails = document.getElementById('indicatordetails1') ;
+    var indicatordownload = document.getElementById('indicatorDownload1') ;
     
-//     var allDetails = {
-//         text : indicatortext.value ,
-//         date : indicatordate.value ,
-//         details : indicatordetails.value
-//     }
+    var allDetails = {
+        text : indicatortext.value ,
+        date : indicatordate.value ,
+        details : indicatordetails.value
+    }
 
-//     var db = firebase.database().ref('/data/indicatordetails1') ;
-//     db.set({ 
-//             Detail: allDetails 
-//         }) ;
+    var db = firebase.database().ref('/data/indicatordetails1') ;
+    db.set({ 
+            Detail: allDetails 
+        }) ;
         
-//         return false ;
+        return false ;
 
-// }
+}
 
-// function indicator2(){
-//     var indicatortext = document.getElementById('indicatortext2') ;
-//     var indicatordate = document.getElementById('indicatordate2') ;
-//     var indicatordetails = document.getElementById('indicatordetails2') ;
-//     var indicatordownload = document.getElementById('indicatorDownload2') ;
+function indicator2(){
+    var indicatortext = document.getElementById('indicatortext2') ;
+    var indicatordate = document.getElementById('indicatordate2') ;
+    var indicatordetails = document.getElementById('indicatordetails2') ;
+    var indicatordownload = document.getElementById('indicatorDownload2') ;
     
-//     var allDetails = {
-//         text : indicatortext.value ,
-//         date : indicatordate.value ,
-//         details : indicatordetails.value
-//     }
+    var allDetails = {
+        text : indicatortext.value ,
+        date : indicatordate.value ,
+        details : indicatordetails.value
+    }
 
-//     var db = firebase.database().ref('/data/indicatordetails2') ;
-//     db.set({ 
-//             Detail: allDetails 
-//         }) ;
+    var db = firebase.database().ref('/data/indicatordetails2') ;
+    db.set({ 
+            Detail: allDetails 
+        }) ;
         
-//         return false ;
+        return false ;
 
-// }
+}
 
 var uploader=document.getElementById('upload'),
 fileButton=document.getElementById('indicatorimage');
@@ -486,83 +486,83 @@ fileButton.addEventListener('change', function(e) {
 });
 
 
-// var uploader=document.getElementById('upload1'),
-// fileButton=document.getElementById('indicatorimage1');
+var uploader1=document.getElementById('upload1'),
+fileButton1=document.getElementById('indicatorimage1');
 
-// var file ;
-// var storageRef;
-// var downloadURL;
-// fileButton.addEventListener('change', function(e) {
-//   file=e.target.files[0];
-//  storageRef=firebase.storage().ref("images/"+file.name).put(file);
+var file ;
+var storageRef;
+var downloadURL;
+fileButton1.addEventListener('change', function(e) {
+  file=e.target.files[0];
+ storageRef=firebase.storage().ref("images/"+file.name).put(file);
 
-//  storageRef.on('state_changed', function progress(snapshot){
-//     console.log(snapshot)
-//      var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
-//  uploader.value=percentage;
-//  if (percentage==100){
-//  alert("file Ready to Upload");
-//  }
-// },function error(err){
+ storageRef.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+ uploader1.value=percentage;
+ if (percentage==100){
+ alert("file Ready to Upload");
+ }
+},function error(err){
 
-//  },
-//  function complete(){
-//     console.log('file uploaded')
-//     uploader.addEventListener('click',function(){
+ },
+ function complete(){
+    console.log('file uploaded')
+    uploader1.addEventListener('click',function(){
 
-//          downloadURL = storageRef.snapshot.downloadURL;  
-//         console.log(downloadURL)
-//         var db = firebase.database().ref('/data/image1') ;
-//         db.set({ 
-//                 url : downloadURL 
-//             }) ;
+         downloadURL = storageRef.snapshot.downloadURL;  
+        console.log(downloadURL)
+        var db = firebase.database().ref('/data/image1') ;
+        db.set({ 
+                url : downloadURL 
+            }) ;
    
 
        
-//     })
+    })
 
-//  })
+ })
 
-// });
+});
 
-// var uploader=document.getElementById('upload2'),
-// fileButton=document.getElementById('indicatorimage2');
+var uploader2=document.getElementById('upload2'),
+fileButton2=document.getElementById('indicatorimage2');
 
-// var file ;
-// var storageRef;
-// var downloadURL;
-// fileButton.addEventListener('change', function(e) {
-//   file=e.target.files[0];
-//  storageRef=firebase.storage().ref("images/"+file.name).put(file);
+var file ;
+var storageRef;
+var downloadURL;
+fileButton2.addEventListener('change', function(e) {
+  file=e.target.files[0];
+ storageRef=firebase.storage().ref("images/"+file.name).put(file);
 
-//  storageRef.on('state_changed', function progress(snapshot){
-//     console.log(snapshot)
-//      var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
-//  uploader.value=percentage;
-//  if (percentage==100){
-//  alert("file Reacdy To upload");
-//  }
-// },function error(err){
+ storageRef.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+ uploader2.value=percentage;
+ if (percentage==100){
+ alert("file Reacdy To upload");
+ }
+},function error(err){
 
-//  },
-//  function complete(){
-//     console.log('file uploaded')
-//     uploader.addEventListener('click',function(){
+ },
+ function complete(){
+    console.log('file uploaded')
+    uploader2.addEventListener('click',function(){
 
-//          downloadURL = storageRef.snapshot.downloadURL;  
-//         console.log(downloadURL)
-//         var db = firebase.database().ref('/data/image2') ;
-//         db.set({ 
-//                 url : downloadURL 
-//             }) ;
+         downloadURL = storageRef.snapshot.downloadURL;  
+        console.log(downloadURL)
+        var db = firebase.database().ref('/data/image2') ;
+        db.set({ 
+                url : downloadURL 
+            }) ;
    
 
        
-//     })
+    })
 
-//  })
+ })
 
-// });
+});
 
 
 var download=document.getElementById('download'),
@@ -605,84 +605,84 @@ console.log('working')
 });
 
 
-// var download1=document.getElementById('download1'),
-// fileB1=document.getElementById('indicatorDownload1');
+var download1=document.getElementById('download1'),
+fileB1=document.getElementById('indicatorDownload1');
 
-// var file1 ;
-// var storageRef1;
-// var downloadURL1;
-// fileB1.addEventListener('change', function(e) {
-//   file1=e.target.files[0];
-//  storageRef1=firebase.storage().ref("doc/"+file1.name).put(file1);
+var file1 ;
+var storageRef1;
+var downloadURL1;
+fileB1.addEventListener('change', function(e) {
+  file1=e.target.files[0];
+ storageRef1=firebase.storage().ref("doc/"+file1.name).put(file1);
 
-//  storageRef1.on('state_changed', function progress(snapshot){
-//     console.log(snapshot)
-//      var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
-//  download1.value=percentage;
-//  if (percentage==100){
-//  alert("Ready to Upload");
-//  }
-// },function error(err){
+ storageRef1.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+ download1.value=percentage;
+ if (percentage==100){
+ alert("Ready to Upload");
+ }
+},function error(err){
 
-//  },
-//  function complete(){
-//     console.log('file uploaded')
-//     download1.addEventListener('click',function(){
-// console.log('working')
-//          downloadURL1 = storageRef1.snapshot.downloadURL;  
-//         console.log(downloadURL1)
-//         var db = firebase.database().ref('/data/doc1') ;
-//         db.set({ 
-//                 url : downloadURL1 
-//             }) ;
+ },
+ function complete(){
+    console.log('file uploaded')
+    download1.addEventListener('click',function(){
+console.log('working')
+         downloadURL1 = storageRef1.snapshot.downloadURL;  
+        console.log(downloadURL1)
+        var db = firebase.database().ref('/data/doc1') ;
+        db.set({ 
+                url : downloadURL1 
+            }) ;
    
 
        
-//     })
+    })
 
-//  })
+ })
 
-// });
+});
 
 
-// var download1=document.getElementById('download2'),
-// fileB1=document.getElementById('indicatorDownload2');
+var download1=document.getElementById('download2'),
+fileB1=document.getElementById('indicatorDownload2');
 
-// var file1 ;
-// var storageRef1;
-// var downloadURL1;
-// fileB1.addEventListener('change', function(e) {
-//   file1=e.target.files[0];
-//  storageRef1=firebase.storage().ref("doc/"+file1.name).put(file1);
+var file1 ;
+var storageRef1;
+var downloadURL1;
+fileB1.addEventListener('change', function(e) {
+  file1=e.target.files[0];
+ storageRef1=firebase.storage().ref("doc/"+file1.name).put(file1);
 
-//  storageRef1.on('state_changed', function progress(snapshot){
-//     console.log(snapshot)
-//      var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
-//  download1.value=percentage;
-//  if (percentage==100){
-//  alert("Ready to Upload");
-//  }
-// },function error(err){
+ storageRef1.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+ download1.value=percentage;
+ if (percentage==100){
+ alert("Ready to Upload");
+ }
+},function error(err){
 
-//  },
-//  function complete(){
-//     console.log('file uploaded')
-//     download1.addEventListener('click',function(){
-// console.log('working')
-//          downloadURL1 = storageRef1.snapshot.downloadURL;  
-//         console.log(downloadURL1)
-//         var db = firebase.database().ref('/data/doc2') ;
-//         db.set({ 
-//                 url : downloadURL1 
-//             }) ;
+ },
+ function complete(){
+    console.log('file uploaded')
+    download1.addEventListener('click',function(){
+console.log('working')
+         downloadURL1 = storageRef1.snapshot.downloadURL;  
+        console.log(downloadURL1)
+        var db = firebase.database().ref('/data/doc2') ;
+        db.set({ 
+                url : downloadURL1 
+            }) ;
    
 
        
-//     })
+    })
 
-//  })
+ })
 
-// });
+});
 
 
 function func1(){
@@ -730,65 +730,65 @@ image.src = obj1 ;
      messagefile.innerText = obj ;
     })
 
-    // var doc1= document.getElementById('doc1');
-    // var image1 = document.getElementById('img1');
-    // var indhead1 = document.getElementById('indhead1') ;
-    // var inddate1 = document.getElementById('inddate1') ;
-    // var indetails1 = document.getElementById('inddetails1') ;
-    // var datab1 = firebase.database().ref('/data/indicatordetails1/')
-    // datab1.on("child_added", (snap) => {  
-    // var head1 = snap.val().text;
-    // var date1 = snap.val().date ;
-    // var detail1 = snap.val().details ;
-    // indhead1.innerHTML = head1 ;
-    // inddate1.innerHTML = date1 ;
-    // indetails1.innerHTML = detail1 ;
+    var doc1= document.getElementById('doc1');
+    var image1 = document.getElementById('img1');
+    var indhead1 = document.getElementById('indhead1') ;
+    var inddate1 = document.getElementById('inddate1') ;
+    var indetails1 = document.getElementById('inddetails1') ;
+    var datab1 = firebase.database().ref('/data/indicatordetails1/')
+    datab1.on("child_added", (snap) => {  
+    var head1 = snap.val().text;
+    var date1 = snap.val().date ;
+    var detail1 = snap.val().details ;
+    indhead1.innerHTML = head1 ;
+    inddate1.innerHTML = date1 ;
+    indetails1.innerHTML = detail1 ;
     
-    // })
+    })
     
-    // var refRoot = firebase.database().ref('/data/doc1/')
-    // refRoot.on("child_added", (snap) => {
-    // var obj = snap.val();
-    // var obj1 = String(obj) ;
-    // doc1.href = obj1 ;
-    // console.log(doc)
-    // })
-    //     var refRoot = firebase.database().ref('/data/image1/')
-    //     refRoot.on("child_added", (snap) => {
-    //    var obj = snap.val();
-    // var obj1 = String(obj) ;
-    // image1.src = obj1 ;
-    //     })
+    var refRoot = firebase.database().ref('/data/doc1/')
+    refRoot.on("child_added", (snap) => {
+    var obj = snap.val();
+    var obj1 = String(obj) ;
+    doc1.href = obj1 ;
+    console.log(doc)
+    })
+        var refRoot = firebase.database().ref('/data/image1/')
+        refRoot.on("child_added", (snap) => {
+       var obj = snap.val();
+    var obj1 = String(obj) ;
+    image1.src = obj1 ;
+        })
 
-        // var doc2= document.getElementById('doc2');
-        // var image2 = document.getElementById('img2');
-        // var indhead2 = document.getElementById('indhead2') ;
-        // var inddate2 = document.getElementById('inddate2') ;
-        // var indetails2 = document.getElementById('inddetails2') ;
-        // var datab2 = firebase.database().ref('/data/indicatordetails2/')
-        // datab2.on("child_added", (snap) => {  
-        // var head2 = snap.val().text;
-        // var date2 = snap.val().date ;
-        // var detail2 = snap.val().details ;
-        // indhead2.innerHTML = head2 ;
-        // inddate2.innerHTML = date2 ;
-        // indetails2.innerHTML = detail2 ;
+        var doc2= document.getElementById('doc2');
+        var image2 = document.getElementById('img2');
+        var indhead2 = document.getElementById('indhead2') ;
+        var inddate2 = document.getElementById('inddate2') ;
+        var indetails2 = document.getElementById('inddetails2') ;
+        var datab2 = firebase.database().ref('/data/indicatordetails2/')
+        datab2.on("child_added", (snap) => {  
+        var head2 = snap.val().text;
+        var date2 = snap.val().date ;
+        var detail2 = snap.val().details ;
+        indhead2.innerHTML = head2 ;
+        inddate2.innerHTML = date2 ;
+        indetails2.innerHTML = detail2 ;
         
-        // })
+        })
         
-        // var refRoot = firebase.database().ref('/data/doc2/')
-        // refRoot.on("child_added", (snap) => {
-        // var obj = snap.val();
-        // var obj2 = String(obj) ;
-        // doc2.href = obj2 ;
-        // console.log(doc)
-        // })
-        //     var refRoot = firebase.database().ref('/data/image2/')
-        //     refRoot.on("child_added", (snap) => {
-        //    var obj = snap.val();
-        // var obj2 = String(obj) ;
-        // image2.src = obj2 ;
-        //     })
+        var refRoot = firebase.database().ref('/data/doc2/')
+        refRoot.on("child_added", (snap) => {
+        var obj = snap.val();
+        var obj2 = String(obj) ;
+        doc2.href = obj2 ;
+        console.log(doc)
+        })
+            var refRoot = firebase.database().ref('/data/image2/')
+            refRoot.on("child_added", (snap) => {
+           var obj = snap.val();
+        var obj2 = String(obj) ;
+        image2.src = obj2 ;
+            })
 
 }
 
@@ -813,42 +813,42 @@ console.log(allDetails)
         return false ;
 
 }
-// function forexlibrary1(){
-//     var forextext = document.getElementById('forextext1') ;
-//     var forexdate = document.getElementById('forexdate1') ;
-//     var forexdetails = document.getElementById('forexdetails1') ;
-//     var allDetails = {
-//         text : forextext.value ,
-//         date : forexdate.value ,
-//         details : forexdetails.value
-//     }
-// console.log(allDetails)
-//     var db = firebase.database().ref('/data/forexlibrary/2nddetails/information') ;
-//     db.set({ 
-//             Detail: allDetails 
-//         }) ;
+function forexlibrary1(){
+    var forextext = document.getElementById('forextext1') ;
+    var forexdate = document.getElementById('forexdate1') ;
+    var forexdetails = document.getElementById('forexdetails1') ;
+    var allDetails = {
+        text : forextext.value ,
+        date : forexdate.value ,
+        details : forexdetails.value
+    }
+console.log(allDetails)
+    var db = firebase.database().ref('/data/forexlibrary/2nddetails/information') ;
+    db.set({ 
+            Detail: allDetails 
+        }) ;
         
-//         return false ;
+        return false ;
 
-// }
-// function forexlibrary2(){
-//     var forextext = document.getElementById('forextext2') ;
-//     var forexdate = document.getElementById('forexdate2') ;
-//     var forexdetails = document.getElementById('forexdetails2') ;
-//     var allDetails = {
-//         text : forextext.value ,
-//         date : forexdate.value ,
-//         details : forexdetails.value
-//     }
-// console.log(allDetails)
-//     var db = firebase.database().ref('/data/forexlibrary/3rddetails/information') ;
-//     db.set({ 
-//             Detail: allDetails 
-//         }) ;
+}
+function forexlibrary2(){
+    var forextext = document.getElementById('forextext2') ;
+    var forexdate = document.getElementById('forexdate2') ;
+    var forexdetails = document.getElementById('forexdetails2') ;
+    var allDetails = {
+        text : forextext.value ,
+        date : forexdate.value ,
+        details : forexdetails.value
+    }
+console.log(allDetails)
+    var db = firebase.database().ref('/data/forexlibrary/3rddetails/information') ;
+    db.set({ 
+            Detail: allDetails 
+        }) ;
         
-//         return false ;
+        return false ;
 
-// }
+}
 
 var forexlupload=document.getElementById('forexlupload'),
 forexfileupload=document.getElementById('forexfileupload');
@@ -928,6 +928,167 @@ console.log('working')
 
 });
 
+
+var forexlupload1=document.getElementById('forexlupload1'),
+forexfileupload1=document.getElementById('forexfileupload1');
+
+var file ;
+var storageRef;
+var downloadURL;
+forexfileupload1.addEventListener('change', function(e) {
+  file=e.target.files[0];
+ storageRef=firebase.storage().ref("foreximages/"+file.name).put(file);
+
+ storageRef.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+     forexlupload1.value=percentage;
+ if (percentage==100){
+ alert("file Ready to upload");
+ }
+},function error(err){
+
+ },
+ function complete(){
+    console.log('file Ready to upload')
+    forexlupload1.addEventListener('click',function(){
+
+         downloadURL = storageRef.snapshot.downloadURL;  
+        console.log(downloadURL)
+        var db = firebase.database().ref('/data/forexlibrary/2nddetails/image') ;
+        db.set({ 
+                url : downloadURL 
+            }) ;
+   
+
+       
+    })
+
+ })
+
+});
+
+var forexlibrarydownload1=document.getElementById('forexlibrarydownload1'),
+forexfiledownload1=document.getElementById('forexfiledownload1');
+
+var file1 ;
+var storageRef1;
+var downloadURL1;
+forexfiledownload1.addEventListener('change', function(e) {
+  file1=e.target.files[0];
+ storageRef1=firebase.storage().ref("doc/"+file1.name).put(file1);
+
+ storageRef1.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+     forexlibrarydownload1.value=percentage;
+ if (percentage==100){
+ alert("Ready to Upload");
+ }
+},function error(err){
+
+ },
+ function complete(){
+    console.log('file uploaded')
+    forexlibrarydownload1.addEventListener('click',function(){
+console.log('working')
+         downloadURL1 = storageRef1.snapshot.downloadURL;  
+        console.log(downloadURL1)
+        var db = firebase.database().ref('/data/forexlibrary/2nddetails/doc') ;
+        db.set({ 
+                url : downloadURL1 
+            }) ;
+   
+
+       
+    })
+
+ })
+
+});
+
+
+
+var forexlupload2=document.getElementById('forexlupload2'),
+forexfileupload2=document.getElementById('forexfileupload2');
+
+var file ;
+var storageRef;
+var downloadURL;
+forexfileupload2.addEventListener('change', function(e) {
+  file=e.target.files[0];
+ storageRef=firebase.storage().ref("foreximages/"+file.name).put(file);
+
+ storageRef.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+     forexlupload2.value=percentage;
+ if (percentage==100){
+ alert("file Ready to upload");
+ }
+},function error(err){
+
+ },
+ function complete(){
+    console.log('file Ready to upload')
+    forexlupload2.addEventListener('click',function(){
+
+         downloadURL = storageRef.snapshot.downloadURL;  
+        console.log(downloadURL)
+        var db = firebase.database().ref('/data/forexlibrary/3rddetails/image') ;
+        db.set({ 
+                url : downloadURL 
+            }) ;
+   
+
+       
+    })
+
+ })
+
+});
+
+var forexlibrarydownload2=document.getElementById('forexlibrarydownload2'),
+forexfiledownload2=document.getElementById('forexfiledownload2');
+
+var file1 ;
+var storageRef1;
+var downloadURL1;
+forexfiledownload2.addEventListener('change', function(e) {
+  file1=e.target.files[0];
+ storageRef1=firebase.storage().ref("doc/"+file1.name).put(file1);
+
+ storageRef1.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+     forexlibrarydownload2.value=percentage;
+ if (percentage==100){
+ alert("Ready to Upload");
+ }
+},function error(err){
+
+ },
+ function complete(){
+    console.log('file uploaded')
+    forexlibrarydownload2.addEventListener('click',function(){
+console.log('working')
+         downloadURL1 = storageRef1.snapshot.downloadURL;  
+        console.log(downloadURL1)
+        var db = firebase.database().ref('/data/forexlibrary/3rddetails/doc') ;
+        db.set({ 
+                url : downloadURL1 
+            }) ;
+   
+
+       
+    })
+
+ })
+
+});
+
+
+
 //for forex ea
 
 function forexea(){
@@ -941,6 +1102,42 @@ function forexea(){
     }
 console.log(allDetails)
     var db = firebase.database().ref('/data/forexea/1stdetails/information') ;
+    db.set({ 
+            Detail: allDetails 
+        }) ;
+        
+        return false ;
+
+}
+function forexea1(){
+    var forexeatext = document.getElementById('forexeatext1') ;
+    var forexeadate = document.getElementById('forexeadate1') ;
+    var forexeadetails = document.getElementById('forexeadetails1') ;
+    var allDetails = {
+        text : forexeatext.value ,
+        date : forexeadate.value ,
+        details : forexeadetails.value
+    }
+console.log(allDetails)
+    var db = firebase.database().ref('/data/forexea/2nddetails/information') ;
+    db.set({ 
+            Detail: allDetails 
+        }) ;
+        
+        return false ;
+
+}
+function forexea2(){
+    var forexeatext = document.getElementById('forexeatext2') ;
+    var forexeadate = document.getElementById('forexeadate2') ;
+    var forexeadetails = document.getElementById('forexeadetails2') ;
+    var allDetails = {
+        text : forexeatext.value ,
+        date : forexeadate.value ,
+        details : forexeadetails.value
+    }
+console.log(allDetails)
+    var db = firebase.database().ref('/data/forexea/3rddetails/information') ;
     db.set({ 
             Detail: allDetails 
         }) ;
@@ -1029,4 +1226,163 @@ console.log('working')
 });
 
 
+var forexeaupload1=document.getElementById('forexeaupload1'),
+forexfileeaupload1=document.getElementById('forexfileeaupload1');
 
+var file ;
+var storageRef;
+var downloadURL;
+forexfileeaupload1.addEventListener('change', function(e) {
+  file=e.target.files[0];
+ storageRef=firebase.storage().ref("foreximages/"+file.name).put(file);
+
+ storageRef.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+     forexeaupload1.value=percentage;
+ if (percentage==100){
+ alert("file Ready to upload");
+ }
+},function error(err){
+
+ },
+ function complete(){
+    console.log('file Ready to upload')
+    forexeaupload1.addEventListener('click',function(){
+
+         downloadURL = storageRef.snapshot.downloadURL;  
+        console.log(downloadURL)
+        var db = firebase.database().ref('/data/forexea/2nddetails/image') ;
+        db.set({ 
+                url : downloadURL 
+            }) ;
+   
+
+       
+    })
+
+ })
+
+});
+
+
+var forexeadownload1=document.getElementById('forexeadownload1'),
+forexfileeadownload1=document.getElementById('forexfileeadownload1');
+
+var file1 ;
+var storageRef1;
+var downloadURL1;
+forexfileeadownload.addEventListener('change', function(e) {
+  file1=e.target.files[0];
+ storageRef1=firebase.storage().ref("forexeadoc/"+file1.name).put(file1);
+
+ storageRef1.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+     forexeadownload1.value=percentage;
+ if (percentage==100){
+ alert("Ready to Upload");
+ }
+},function error(err){
+
+ },
+ function complete(){
+    console.log('file uploaded')
+    forexeadownload1.addEventListener('click',function(){
+console.log('working')
+         downloadURL1 = storageRef1.snapshot.downloadURL;  
+        console.log(downloadURL1)
+        var db = firebase.database().ref('/data/forexea/2nddetails/doc') ;
+        db.set({ 
+                url : downloadURL1 
+            }) ;
+   
+
+       
+    })
+
+ })
+
+});
+
+
+
+
+var forexeaupload2=document.getElementById('forexeaupload'),
+forexfileeaupload2=document.getElementById('forexfileeaupload');
+
+var file ;
+var storageRef;
+var downloadURL;
+forexfileeaupload2.addEventListener('change', function(e) {
+  file=e.target.files[0];
+ storageRef=firebase.storage().ref("foreximages/"+file.name).put(file);
+
+ storageRef.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+     forexeaupload2.value=percentage;
+ if (percentage==100){
+ alert("file Ready to upload");
+ }
+},function error(err){
+
+ },
+ function complete(){
+    console.log('file Ready to upload')
+    forexeaupload2.addEventListener('click',function(){
+
+         downloadURL = storageRef.snapshot.downloadURL;  
+        console.log(downloadURL)
+        var db = firebase.database().ref('/data/forexea/3rddetails/image') ;
+        db.set({ 
+                url : downloadURL 
+            }) ;
+   
+
+       
+    })
+
+ })
+
+});
+
+
+var forexeadownload2=document.getElementById('forexeadownload'),
+forexfileeadownload2=document.getElementById('forexfileeadownload');
+
+var file1 ;
+var storageRef1;
+var downloadURL1;
+forexfileeadownload2.addEventListener('change', function(e) {
+  file1=e.target.files[0];
+ storageRef1=firebase.storage().ref("forexeadoc/"+file1.name).put(file1);
+
+ storageRef1.on('state_changed', function progress(snapshot){
+    console.log(snapshot)
+     var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+     forexeadownload2.value=percentage;
+ if (percentage==100){
+ alert("Ready to Upload");
+ }
+},function error(err){
+
+ },
+ function complete(){
+    console.log('file uploaded')
+    forexeadownload2.addEventListener('click',function(){
+console.log('working')
+         downloadURL1 = storageRef1.snapshot.downloadURL;  
+        console.log(downloadURL1)
+        var db = firebase.database().ref('/data/forexea/3rddetails/doc') ;
+        db.set({ 
+                url : downloadURL1 
+            }) ;
+   
+
+       
+    })
+
+ })
+
+});
