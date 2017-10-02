@@ -1109,14 +1109,15 @@ console.log(allDetails)
         return false ;
 
 }
+
 function forexea1(){
-    var forexeatext = document.getElementById('forexeatext1') ;
-    var forexeadate = document.getElementById('forexeadate1') ;
-    var forexeadetails = document.getElementById('forexeadetails1') ;
+    var forexeatext1 = document.getElementById('forexeatext1') ;
+    var forexeadate1 = document.getElementById('forexeadate1') ;
+    var forexeadetails1 = document.getElementById('forexeadetails1') ;
     var allDetails = {
-        text : forexeatext.value ,
-        date : forexeadate.value ,
-        details : forexeadetails.value
+        text : forexeatext1.value ,
+        date : forexeadate1.value ,
+        details : forexeadetails1.value
     }
 console.log(allDetails)
     var db = firebase.database().ref('/data/forexea/2nddetails/information') ;
@@ -1127,14 +1128,16 @@ console.log(allDetails)
         return false ;
 
 }
+
+
 function forexea2(){
-    var forexeatext = document.getElementById('forexeatext2') ;
-    var forexeadate = document.getElementById('forexeadate2') ;
-    var forexeadetails = document.getElementById('forexeadetails2') ;
+    var forexeatext2 = document.getElementById('forexeatext2') ;
+    var forexeadate2 = document.getElementById('forexeadate2') ;
+    var forexeadetails2 = document.getElementById('forexeadetails2') ;
     var allDetails = {
-        text : forexeatext.value ,
-        date : forexeadate.value ,
-        details : forexeadetails.value
+        text : forexeatext2.value ,
+        date : forexeadate2.value ,
+        details : forexeadetails2.value
     }
 console.log(allDetails)
     var db = firebase.database().ref('/data/forexea/3rddetails/information') ;
@@ -1272,7 +1275,7 @@ forexfileeadownload1=document.getElementById('forexfileeadownload1');
 var file1 ;
 var storageRef1;
 var downloadURL1;
-forexfileeadownload.addEventListener('change', function(e) {
+forexfileeadownload1.addEventListener('change', function(e) {
   file1=e.target.files[0];
  storageRef1=firebase.storage().ref("forexeadoc/"+file1.name).put(file1);
 
@@ -1306,10 +1309,8 @@ console.log('working')
 });
 
 
-
-
-var forexeaupload2=document.getElementById('forexeaupload'),
-forexfileeaupload2=document.getElementById('forexfileeaupload');
+var forexeaupload2=document.getElementById('forexeaupload2'),
+forexfileeaupload2=document.getElementById('forexfileeaupload2');
 
 var file ;
 var storageRef;
@@ -1348,8 +1349,10 @@ forexfileeaupload2.addEventListener('change', function(e) {
 });
 
 
-var forexeadownload2=document.getElementById('forexeadownload'),
-forexfileeadownload2=document.getElementById('forexfileeadownload');
+
+
+var forexeadownload2=document.getElementById('forexeadownload2'),
+forexfileeadownload2=document.getElementById('forexfileeadownload2');
 
 var file1 ;
 var storageRef1;

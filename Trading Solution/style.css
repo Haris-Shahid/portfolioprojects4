@@ -267,10 +267,6 @@ div.services1{
     
 }
 
-.book li{
-    float:right ;
-    margin-right: 20px;
-}
  
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
@@ -409,12 +405,175 @@ div .sr1{
 .topnav .icon {
     display: none;
 }
+/* forex library style  */
+div.containerf{
+    height: 630px ;
+}
 
+div.flcontainer1{
+    border:1px solid black;
+    border-radius:10px ;
+    background-color:lightgray;
+    overflow:hidden;
+    padding:0px;
+}
+
+img.banner{
+    width:120px ;
+    height: 600px ;
+}
+div.maincontainer{
+    height:100%;
+    overflow:auto;
+    padding-bottom:20px;
+}
+div.childcontainer{
+    margin:20px;
+    overflow:hidden;
+    height:140px;
+}
+div.childcontainer h5 {
+    text-align: center;
+}
+div.childcontainer1{
+    float:left; 
+    display:inline-block;
+}
+span.childcontainerspan1{
+    float:left;
+    width:16%;
+    overflow: hidden;
+}
+span.childcontainerspan1 p{
+    color :gray; 
+    font-size: 15px;
+    text-align: center; 
+}
+span.childcontainerspan1 img{
+    width: 100% ;
+    height: 80px ;
+    border-radius: 10px ;
+}
+span.childcontainerspan2{
+    float:left; 
+    width:82%; 
+    text-align:justify ;
+    margin-left: 10px ;
+    padding-top: 10px ;
+}
+span.childcontainerspan2 p {
+    float: left ; 
+    display:block ;
+    font-size:13px; 
+    width: 86% ; 
+    text-align: center ;
+}
+span.childcontainerspan2 a{
+    background-color: #008000;
+    color:white ;
+    padding:8px ;
+    border-radius:5px ; 
+    font-size: 13px ;
+    text-decoration: none;
+    margin-left: 10px ;
+    margin-top: 1% ;
+    float : left ;
+}
+span.childcontainerspan2 a:hover{
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+    background-color: red ;
+    text-decoration: none;
+    color: white ;
+}
+
+@media screen and (max-width: 1370px) {
+    span.childcontainerspan2 p{
+        width: 85% ;
+    }
+}
+@media screen and (max-width: 1230px) {
+    span.childcontainerspan2{
+        margin-left: 5px ;
+        padding-top: 6px ;
+    }
+    span.childcontainerspan2 a{
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 1153px) {
+    span.childcontainerspan2 p{
+        width: 82% ;
+        font-size: 12px ;
+    }
+    span.childcontainerspan2 a{
+        margin-top: 15px ;
+    }
+}
+@media screen and (max-width: 925px) {
+    span.childcontainerspan1{
+        width: 14% ;
+    }
+    span.childcontainerspan1 p{
+        font-size: 12px ;
+    }
+    div.childcontainer{
+        height: 120px ;
+    }
+    span.childcontainerspan2{
+        padding-top: 2px ;
+    }
+    span.childcontainerspan2 p{
+        width: 80% ;
+        font-size: 11px ;
+    }
+    span.childcontainerspan1 img{
+        height: 70px ;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    div.flcontainer ,div.flcontainer2{
+        width:100px
+    }
+    img.banner{
+        width: 100px ;
+        height:500px ;
+    }
+    div.containerf{
+        height: 570px ;
+    }
+}
+@media screen and (max-width: 850px) {
+    div.childcontainer{
+        height: 115px ;
+    }
+    span.childcontainerspan1 img{
+        height: 55px ;
+    }
+    span.childcontainerspan2{
+        padding-top: 0px ;
+    }
+    span.childcontainerspan2 p{
+        font-size: 10px ;
+        width: 79% ;
+    }
+    div.containerf{
+        height: 550px ;
+    }
+}
+@media screen and (max-width: 810px) {
+    
+}
+  
+
+/* end box */
 .signal{
     height: 7% ;
+    width:100%;
     background-color: black ;
     border-top-left-radius :10px ;
     border-top-right-radius :10px ;
+    text-align:center;
 }
 div.card {
         border-radius: 1.25rem;
