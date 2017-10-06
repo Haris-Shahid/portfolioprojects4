@@ -645,7 +645,7 @@ console.log('working')
 });
 
 
-var download1=document.getElementById('download2'),
+var download2=document.getElementById('download2'),
 fileB1=document.getElementById('indicatorDownload2');
 
 var file1 ;
@@ -658,7 +658,7 @@ fileB1.addEventListener('change', function(e) {
  storageRef1.on('state_changed', function progress(snapshot){
     console.log(snapshot)
      var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
- download1.value=percentage;
+ download2.value=percentage;
  if (percentage==100){
  alert("Ready to Upload");
  }
@@ -667,7 +667,7 @@ fileB1.addEventListener('change', function(e) {
  },
  function complete(){
     console.log('file uploaded')
-    download1.addEventListener('click',function(){
+    download2.addEventListener('click',function(){
 console.log('working')
          downloadURL1 = storageRef1.snapshot.downloadURL;  
         console.log(downloadURL1)
@@ -684,7 +684,7 @@ console.log('working')
 
 });
 
-
+    
 function func1(){
 
     //indicators details
