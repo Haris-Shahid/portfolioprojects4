@@ -7,6 +7,7 @@
     <title>Earningfx Trading Solution</title>
     <link rel="icon" type="image/gif" href="images/head.png" />
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="signalservice.css">
     <link href="./css/HomePageCSS4817.css?v=fJB2srT1bybXuUGwsFrS97Zeuo48LqhyyyVX8VQdS4Y1" rel="stylesheet"/>
     
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -50,7 +51,7 @@
             <span id='alertmessage'></span>
             <br>
             <a href="signal-services.html#signal">Click Here For More...</a>
-          </div>
+          </div>  
           <article>
             <h5>Recommended Brokers</h5>
             
@@ -142,15 +143,15 @@
           <div id='signal' class='container signal' >
             <h5>Signal Services</h5>
           </div>
-          <div class = "container-fluid" style='height:77.5%;overflow:auto;background-color:lightgray;padding-top:5px;' >
+          <div class = "container-fluid signalcontainer" >
             <div class="row" id='1' >
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 <div class='card' >
                   <div>
                     <table class="table table-sm">
                       <thead>
                         <tr>
-                          <th style="text-align: center ;" >Pair:  </th>
+                          <th>Pair:  </th>
                           <th id="pair1" ></th>
                       </thead>
                       <tbody>
@@ -191,13 +192,13 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 <div class='card' >
                   <div>
                       <table class="table table-sm">
                           <thead>
                             <tr>
-                              <th style="text-align: center ;" >Pair:  </th>
+                              <th>Pair:  </th>
                               <th id="pair2" ></th>
                           </thead>
                           <tbody>
@@ -238,13 +239,14 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
+
+              <div class="col-sm-6 div">
                 <div class='card' >
                   <div class='' >
                       <table class="table table-sm">
                           <thead>
                             <tr>
-                              <th style="text-align: center ;" >Pair:  </th>
+                              <th>Pair:  </th>
                               <th id="pair3" ></th>
                           </thead>
                           <tbody>
@@ -285,9 +287,10 @@
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
-          <div class="container" >
+          <div class="paginationcontainer" >
             
           </div>
         </div>

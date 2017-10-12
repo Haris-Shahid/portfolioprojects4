@@ -5,83 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Signal Services</title>
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<style>
-    .container1{
-        overflow: hidden ;
-    }
-    .tab-2 input{
-        width: 200px;
-        margin-bottom: 20px ; 
-    }
-    
-    table tr td{
-        padding: 10px ;
-    }
-    tr{
-        transition: all .25s ease-in-out ;
-    }
-    tr:hover{
-        background-color: #EEE ;
-        cursor: pointer ;
-    }
-</style>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>    
 </head>
-<body>
-      <div class="container">
-          <h1 align='center' >DashBoard</h1>
-          <div class="container" >
-              <div class="jumbotron" >
-                  
-                
-                  <div class="row">
-                    <div class="col-2">
-                        <button class="btn btn-success" onclick="location.href='signalservices.html';" >Signal Services</button>
-                    </div>
-                    
-                    <div class="col-2">
-                        <button class="btn btn-success" onclick="location.href='indicators.html';" >Indicators</button>
-                    </div>
-                    
-                    <div class="col-2">
-                        <button class="btn btn-success" onclick="location.href='forexlibrary.html';" >Forex Library</button>
-                    </div>
-                    
-                    <div class="col-2">
-                        <button class="btn btn-success" onclick="location.href='forexea.html';" >forexEA</button>
-                    </div>
-                    
-                    <div class="col-2">
-                        <button class="btn btn-success" onclick="location.href='index.html';" >Alert</button>
-                    </div>
-                </div>            
-            </div>
-            </div>
 
-            <div class="container1" >
-                <h4>Signal Services</h4>
-                <div class="tab tab-1" >
-                    <div class="tab tab-2" >    
-                        Pair : <input type="text" id="pair" required />   
-                        Action : <input type="text" id="action" required  />
-                        Entry : <input type="text" id="entry" requi   red />
-                        TP : <input type="text" id="TP" required />  
-                        <br />
-                        SI : <input type="text" id="SI" required /> 
-                        Status : <input type="text" id="status" required />   
-                        Comment : <input type="text" id="comment" required />
-                        Date : <input type="date" id="date" required />   
-                        <br />
-                        Result : <input type="text" id="result" required />
-                        <button onclick="addhtmltable();" >Add</button>
-                        <button onclick="edithtmltableselectedrow()" >Edit</button>
-                        <button onclick="removeSelectedRow()" >Remove</button>
-                    </div>
-                    <table id="table" border="1" >
+<body>
+    <div>
+        <div class="childcontainer" >
+            <a href="index.html" ><h3>Back</h3></a>   
+        </div>
+        <div>
+            <h2>Signal Services</h2>
+            <div class="childcontainer1" >
+                <div class="inputcontainer" >    
+                    Pair :<br /> <input type="text" id="pair" /> <br />   
+                    Action :<br /> <input type="text" id="action" /> <br />
+                    Entry :<br /> <input type="text" id="entry" /> <br />
+                    TP :<br /> <input type="text" id="TP" /> <br />
+                    SI :<br /> <input type="text" id="SI" /> <br />
+                    Status :<br /> <input type="text" id="status" /> <br />  
+                    Comment :<br /> <input type="text" id="comment" /> <br />
+                    Result :<br /> <input type="text" id="result" /> <br />
+                    <button onclick="add();" >Add</button>
+                    <button onclick="edit()" >Edit</button>
+                    <button onclick="remove()" >Remove</button>
+                </div>
+                <div class="tablecontainer" >
+                    <table id="table" >
+                        <thead>
                             <tr>
                                 <th>Pair</th>
                                 <th>Action</th>
@@ -90,15 +41,16 @@
                                 <th>SI</th>
                                 <th>Status</th>
                                 <th>Comment</th>
-                                <th>Signal Date</th>
+                                <th>Date</th>
                                 <th>Result</th>
                             </tr>
-                        </table>
-                    </div>
-                    
+                        </thead>
+                    </table>        
                 </div>
-                
             </div>
-            <script type=text/javascript src="script/signalservice.js" ></script>
+        </div>
+        
+    </div>
+    <script type=text/javascript src="script/signalservice.js" ></script>
 </body>
 </html>
